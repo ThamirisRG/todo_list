@@ -69,14 +69,17 @@ function createTask(value) {
     // decrementa o contador de tarefas
     taskCount.textContent = `Existem ${todoList.childNodes.length} tarefas na sua lista`;
   });
-
-  //pega o botão de remover todas as tarefas
-  const buttonCleanAll = document.querySelector('.todo-list__footer-button-clear');
-
-  //evento de click para remover todas as tarefas
-  buttonCleanAll.addEventListener('click', () => {
-    todoList.removeChild();
-  });
   
   return listItem;
 }
+
+//pega o botão de remover todas as tarefas
+const buttonCleanAll = document.querySelector('.todo-list__footer-button-clear');
+
+//evento de click para remover todas as tarefas
+buttonCleanAll.addEventListener('click', () => {
+  todoList.innerHTML = '';
+  
+  // decrementa o contador de tarefas
+  taskCount.textContent = `Existem 0 tarefas na sua lista`;
+});
