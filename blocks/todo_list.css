@@ -1,10 +1,12 @@
 .todo-list{
     width: 100%;
     max-width: 540px;
+    min-height: 500px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     border-radius: 50px;
     margin: 50px auto 20px;
     gap: 20px;
@@ -16,12 +18,17 @@
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.todo-list__task-list {
+    margin-bottom: auto;
+}
+
 .todo-list__footer{
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 20px;
-    margin: auto;
+    /* margin: auto; */
 }
 .todo-list__footer-task-count{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -47,7 +54,11 @@
     gap: 10px;
     background-color:lightpink;
     border-radius: 5px;
-    
+    margin-bottom: 8px;
+}
+
+.todo-list__task-item:last-of-type {
+    margin-bottom: 0;
 }
 
 .todo-list__text-content {

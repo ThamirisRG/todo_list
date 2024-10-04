@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 50px;
-    
 }
 .form__input{
    border-radius: 10px;
