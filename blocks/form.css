@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    
+}
+.form__input{
+   border-radius: 10px;
+   font-size: 20px;
+    height: 50px;
+    width: 200px;
+    box-shadow: 3px 5px 3px rgba(0,0,0,1);
+}
+.form__button{
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
+    box-shadow: 3px 5px 3px rgba(0,0,0,1);
+    opacity: 0.6;
+    
+}

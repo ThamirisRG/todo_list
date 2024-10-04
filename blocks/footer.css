@@ -1,0 +1,19 @@
+.footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
+    font-size: 20px;
+}
+.footer__contacts{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    gap: 10px;
+}
+.footer__image{
+    width: 50px;
+
+}

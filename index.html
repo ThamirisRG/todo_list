@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+  </head>
+  <body>
+    <div class="page">
+      <!-- header - logo -->
+      <header class="header">
+        <img
+          src="./images/logo.png"
+          alt="logo da empresa"
+          class="header__logo"
+        />
+      </header>
+
+      <!-- main - para o conteúdo principal -->
+      <main class="content">
+        <section class="todo-list content__todo-list">
+          <!-- h1 -->
+          <h1 class="todo-list__title">
+              Lista de Tarefas
+          </h1>
+          <!-- form -->
+           <form class="form todo-list__form">
+             <!-- input -->
+              <input
+                id="input"
+                type="text"
+                class="form__input"
+                placeholder="Digite sua tarefa"
+                required
+              >
+              <!-- button -->
+              <button type="submit" class="form__button">➕</button>
+           </form>
+
+          <!-- ul -->
+          <ul class="todo-list__task-list"></ul>
+
+          <!-- template -->
+          <template id="todo-list__template">
+            <!-- li -->
+            <li class="todo-list__task-item">
+                <!-- Tarefa - done button - remove task button -->
+                <span class="todo-list__text-content"></span>
+                <button class="todo-list__button-done">✅</button>
+                <button class="todo-list__button-remove">🗑️</button>
+            </li>
+          </template>
+          <!-- div -->
+           <div class="todo-list__footer">
+            <!-- text with task count - clear tasks button -->
+            <p class="todo-list__footer-task-count">
+                Existem 0 tarefas na sua lista
+            </p>
+            <button type="button" class="todo-list__footer-button-clear">
+                Clear All
+            </button>
+           </div>
+        </section>
+      </main>
+
+      <!-- footer - links para contato -->
+      <footer class="footer">
+        <div class="footer__contacts">
+            <a href="wa.me/+4407949561650"><img src="./images/WhatsApp_icon.png" alt="logo whatsapp" class="footer__image"></a>
+            <a href="https://github.com/ThamirisRG"><img src="./images/github.png" alt="logo github" class="footer__image"></a>
+        </div>
+        <p class="footer__description">
+          Feito com 💜 por Thamiris Gonçalves.
+        </p>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
