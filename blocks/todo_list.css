@@ -20,6 +20,8 @@
 }
 
 .todo-list__task-list {
+    width: 100%;
+    padding: 0;
     margin-bottom: auto;
 }
 
@@ -28,7 +30,6 @@
     align-items: center;
     gap: 10px;
     font-size: 20px;
-    /* margin: auto; */
 }
 .todo-list__footer-task-count{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -54,7 +55,8 @@
     gap: 10px;
     background-color:lightpink;
     border-radius: 5px;
-    margin-bottom: 8px;
+    max-width: 380px;
+    margin: 0 auto 8px;
 }
 
 .todo-list__task-item:last-of-type {
@@ -62,7 +64,6 @@
 }
 
 .todo-list__text-content {
-    margin-right: 180px;
     padding: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -73,6 +74,7 @@
 .todo-list__button-done {
     border-radius: 10px;
     background-color: lightgray;
+    margin-left: auto;
 }
 
   
